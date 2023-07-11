@@ -26,11 +26,8 @@ const TeamSection = (props) => {
                       <h3><Link onClick={ClickHandler} href='/team-single/[slug]' as={`/team-single/${Team.slug}`}>{Team.name}</Link></h3>
                       <span>{Team.title}</span>
                       <ul>
-                        <li><Link onClick={ClickHandler} href="/"><i className="ti-facebook"></i></Link></li>
-                        <li><Link onClick={ClickHandler} href="/"><i className="ti-twitter-alt"></i></Link></li>
-                        <li><Link onClick={ClickHandler} href="/"><i className="ti-linkedin"></i></Link></li>
-                        <li><Link onClick={ClickHandler} href="/"><i className="ti-instagram"></i></Link></li>
                       </ul>
+                      <Link onClick={ClickHandler} className="theme-btn" href="/shop"><i className=""> Regalar</i></Link>
                     </div>
                   </div>
               </div>

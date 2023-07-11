@@ -62,7 +62,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/slide-3.jpg'})` }}>
+                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/test1.jpg'})` }}>
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">

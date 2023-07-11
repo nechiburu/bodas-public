@@ -18,6 +18,7 @@ import BannerSection from '../components/BannerSection';
 import RSVP from '../components/RSVP';
 import BlogSection from '../components/BlogSection';
 import Footer from '../components/footer';
+import Team from '../components/team/index';
 
 
 const HomePage = (props) => {
@@ -38,20 +39,21 @@ const HomePage = (props) => {
                 <Hero />
                 <PartnerSection/>
                 <ServiceSection/>
-                <VideoSection/>
-                <FunFact/>
+                {/* <VideoSection/> */}
+                {/* <FunFact/> */}
                 <ProjectSection/>
                 <Testimonial/>
-                <Product
+                {/* <Product
                     addToCartProduct={addToCartProduct}
                     products={products}
                     
-                />
+                /> */}
                 <CtaSection/>
                 <PricingSection/>
                 <BannerSection/>
                 <RSVP/>
                 <BlogSection/>
+                <Team/>
                 <Footer/>
             </div>
             <Scrollbar />

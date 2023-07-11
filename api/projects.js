@@ -95,6 +95,7 @@ const Projects = [
     {
         id: '16',
         title:'1',
+        slug: 'Maria-Nevela',
         pimg1:'/images/portfolio/i2.jpg',
     },
     {
@@ -114,7 +115,7 @@ const Projects = [
     },
     {
         id: '20',
-        title:'5',
+        title:'5',        
         pimg1:'/images/portfolio/i1.jpg',
     },
     {
@@ -125,6 +126,7 @@ const Projects = [
     {
         id: '22',
         title:'7',
+        slug:'Rose-Harry',
         pimg1:'/images/portfolio/i8.jpg',
     }
     // {

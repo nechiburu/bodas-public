@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import pimg1 from '/public/images/partners/1.png' 
-import pimg2 from '/public/images/partners/2.png' 
-import pimg3 from '/public/images/partners/3.png' 
-import pimg4 from '/public/images/partners/4.png' 
-import pimg5 from '/public/images/partners/5.png' 
+import pimg1 from '/public/images/partners/part1.png' 
+import pimg2 from '/public/images/partners/part2.png' 
+import pimg3 from '/public/images/partners/part3.png' 
+import pimg4 from '/public/images/partners/part4.png' 
+import pimg5 from '/public/images/partners/part5.png' 
+import pimg6 from '/public/images/partners/part6.png' 
 
 const partners = [
     {
@@ -24,8 +25,8 @@ const partners = [
       pImg:pimg5,
     },
     {
-      pImg:pimg1,
-    },
+        pImg:pimg6,
+      },
 ]
 
 

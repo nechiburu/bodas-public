@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState ,useEffect} from "react";
 import { connect } from "react-redux";
 import Navbar from "../../components/Navbar";
 import PageTitle from "../../components/pagetitle";
@@ -8,6 +8,7 @@ import api from "../../api";
 import { addToCart } from "../../store/actions/action";
 import ShopProduct from '../../components/ShopProduct';
 import ProductSidebar from "../../components/ShopProduct/sidebar";
+import clienteAxios from "../../api/axios"
 
 const ShopPage = (props) => {
   const productsArray = api();
@@ -15,8 +16,20 @@ const ShopPage = (props) => {
   const addToCartProduct = (product, qty = 1) => {
     props.addToCart(product, qty);
   };
+  const [products,setProductos] = useState([]);
 
-  const products = productsArray
+  //useEffect para consultar la API
+  useEffect(
+    ()=>{
+      //query a la api
+      const consultarApi = async () => {
+        const productosConsulta = await clienteAxios.get('/products')
+        setProductos(productosConsulta.data)
+      }
+
+      consultarApi()
+    },[])
+
 
   return (
     <Fragment>

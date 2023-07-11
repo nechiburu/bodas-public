@@ -52,7 +52,7 @@ class Header extends Component {
                 </div>
                 <div className="col-lg-3 col-md-6 col-6">
                   <div className="navbar-header">
-                    <Link onClick={ClickHandler} className="navbar-brand" href="/"><img src='/images/logo.png'
+                    <Link onClick={ClickHandler} className="navbar-brand" href="/"><img src='/images/logo1.png'
                       alt="" /></Link>
                   </div>
                 </div>
@@ -66,6 +66,16 @@ class Header extends Component {
                       </li>
                       <li className="menu-item-has-children">
                         <Link href="/about">Nosotros</Link>
+
+                      </li>
+                      <li className="menu-item-has-children">
+                        <Link href="/service-s2">Bodas - Destinos</Link>
+                        <ul className="sub-menu">
+                          <li><Link href="/service/Photography">Destino 1</Link></li>
+                          <li><Link href="/service/Photography">Destino 2</Link></li>
+                          <li><Link href="/service/Photography">Destino 3</Link></li>
+                          <li><Link href="/service/Photography">Destino 4</Link></li>
+                        </ul>
 
                       </li>
                       <li className="menu-item-has-children">

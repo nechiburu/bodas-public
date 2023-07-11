@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Grid from "@mui/material/Grid";
 import SimpleReactValidator from "simple-react-validator";
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import Link from "next/link";
+import clienteAxios from "../../api/axios";
 
 const SignUpPage = (props) => {
-
-    const router = useRouter()
+    const router = useRouter();
 
     const [value, setValue] = useState({
         email: '',
@@ -19,32 +19,32 @@ const SignUpPage = (props) => {
     });
 
     const changeHandler = (e) => {
-        setValue({...value, [e.target.name]: e.target.value});
+        setValue({ ...value, [e.target.name]: e.target.value });
         validator.showMessages();
     };
 
-    const [validator] = React.useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
+    const [validator] = useState(
+        new SimpleReactValidator({
+            className: 'errorMessage'
+        })
+    );
 
-
-    const submitForm = (e) => {
+    const submitForm = async (e) => {
         e.preventDefault();
-        if (validator.allValid()) {
-            setValue({
-                email: '',
-                full_name: '',
-                password: '',
-                confirm_password: '',
-            });
-            validator.hideMessages();
-            toast.success('Registrado con exito!');
-            router.push('/login')
-        } else {
-            validator.showMessages();
-            toast.error('Campo vacío no esta permitido!');
+
+
+        try {
+            const respuesta = await clienteAxios.post('/register', value)
+            console.log(respuesta)
+            toast.success('Se registro exitosamente')
+            router.push('/login');
+
+        } catch (error) {
+            console.log(error)
+            toast.error('Hubo un error!');
         }
     };
+
     return (
         <Grid className="loginWrapper">
 
@@ -109,7 +109,7 @@ const SignUpPage = (props) => {
                                 className="inputOutline"
                                 fullWidth
                                 placeholder="Confirmar Contraseña"
-                                value={value.password}
+                                value={value.confirm_password}
                                 variant="outlined"
                                 name="confirm_password"
                                 label="Confirmar Contraseña"
@@ -119,7 +119,7 @@ const SignUpPage = (props) => {
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
                             />
-                            {validator.message('confirm password', value.confirm_password, `in:${value.password}`)}
+                            {validator.message('confirm_password', value.confirm_password, 'required')}
                         </Grid>
                         <Grid item xs={12}>
                             <Grid className="formFooter">
