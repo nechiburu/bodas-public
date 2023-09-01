@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-import eimg from '/public/images/error-404.png'
+import eimg from '/public/images/error.jpg'
 
 
 const Error = (props) => {
@@ -15,9 +15,10 @@ const Error = (props) => {
                                 <Image src={eimg} alt=""/>
                             </div>
                             <div className="error-message">
-                                <h3>Oops! Page Not Found!</h3>
-                                <p>We’re sorry but we can’t seem to find the page you requested. This might be because you have typed the web address incorrectly.</p>
-                                <Link href="/home" className="theme-btn-s3">Back to home</Link>
+                                <h3>¡Oops! ¡Página no encontrada!</h3>
+                                <p>Lo sentimos, pero parece que no se pudo encontrar la pagina solicitada. 
+                                    Esto pudo deberse a que ingresaste una dirección incorrecta.</p>
+                                <Link href="/" className="theme-btn-s3">Volver al Inicio</Link>
                             </div>
                         </div>
                     </div>
