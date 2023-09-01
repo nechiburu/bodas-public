@@ -9,15 +9,24 @@ import sinnermg1 from '/public/images/service-single/2.jpg'
 import sinnermg2 from '/public/images/service-single/3.jpg'
 
 import canmg1 from '/public/images/service-single/c1.jpg'
-import canmg2 from '/public/images/service-single/c2.jpg'
+import canmg2 from '/public/images/service-single/c3.jpg'
+//import canmg3 from '/public/images/service-single/c3.jpg'
+
 import jamg1 from '/public/images/service-single/j1.jpg'
 import jamg2 from '/public/images/service-single/j2.jpg'
+// import jamg3 from '/public/images/service-single/j3.jpg'
+
 import pcmg1 from '/public/images/service-single/pc1.jpg'
 import pcmg2 from '/public/images/service-single/pc2.jpg'
+// import pcmg3 from '/public/images/service-single/pc3.jpg'
+
 import rmmg1 from '/public/images/service-single/rm1.jpg'
 import rmmg2 from '/public/images/service-single/rm2.jpg'
-import tmg1 from '/public/images/service-single/t1.jpg'
+// import rmmg3 from '/public/images/service-single/rm3.jpg'
+
+import tmg1 from '/public/images/service-single/t3.jpg'
 import tmg2 from '/public/images/service-single/t2.jpg'
+// import tmg3 from '/public/images/service-single/t3.jpg'
 
 import singleImg1 from '/public/images/service-single/1.jpg'
 import singleImg2 from '/public/images/service-single/4.jpg'
@@ -33,59 +42,79 @@ export const Services = [
         fIcon1:simg6,
         title:'Cancun',
         slug: 'Cancun',
-        description:'Cancún, joya del Caribe Mexicano, ofrece un escenario sin igual para sellar promesas de amor eterno. Sus playas de arena blanca, que contrastan con el inmaculado azul turquesa del océano, crean el telón de fondo perfecto para el "sí, acepto" más romántico. Aquí, las parejas pueden experimentar una boda tocada por la brisa marina y bendecida por el radiante sol tropical. Mientras las palmeras se mecen suavemente y las olas murmuran sus antiguas canciones, los enamorados intercambian votos en este paraíso terrenal. Ya sea una ceremonia íntima en una tranquila playa apartada o una gran celebración en uno de los lujosos resorts que adornan la costa, Cancún transforma cada boda en un sueño hecho realidad. Con atardeceres que parecen pintados a mano y noches estrelladas que invitan al romance, casarse en Cancún es elegir un inicio mágico para una vida juntos.',
+        description:'¡Celebra el amor en el paraíso con nuestra oferta exclusiva de Boda Destino en Cancún!',
+        desc:'Imagina el día más especial de tu vida enmarcado por las aguas turquesas del Caribe, las playas de arena blanca y la brisa tropical. En Cancún, no solo tendrás una boda, sino una experiencia inolvidable que marcará el comienzo de tu historia de amor.',
+        desc2:'Cada instante estará lleno de magia. Desde el emocionante "sí, acepto" hasta el primer baile como pareja casada, te acompañaremos en este emocionante viaje. Nuestro objetivo es que tú y tus seres queridos disfruten de cada momento, sin preocupaciones ni estrés, sabiendo que todo está en manos de profesionales apasionados por crear recuerdos inolvidables.',
+        desc3:'Además, Cancún ofrece una amplia gama de actividades para ti y tus invitados. Desde emocionantes deportes acuáticos y exploración de arrecifes de coral hasta relajantes días en spa y emocionantes excursiones culturales, hay algo para todos los gustos. No solo estarás celebrando tu unión, sino también brindándoles a tus seres queridos unas vacaciones inolvidables.',
+        desc4:'Nuestro equipo de expertos en bodas está aquí para hacer realidad cada uno de tus sueños. Desde el momento en que decidas confiarnos la planificación de tu boda, nos encargaremos de cada detalle, asegurando que cada aspecto refleje tu estilo y personalidad. Desde la elección del lugar perfecto, ya sea en la playa al atardecer o en impresionantes locaciones frente al mar, hasta las actividades para ti y todos tus invitados.',
         simg1:simg1,
         ssImg:singleImg1,
         sinnerImg1:canmg1,
         sinnerImg2:canmg2,
+        // sinnerImg3:canmg3,
     },
     {
         id: '2',
         fIcon1:simg6,
         title:'Jamaica',
         slug: 'Jamaica',
-        description:'Jamaica, la cuna del reggae y el refugio del alma caribeña, se presenta como un destino de bodas sin parangón. Su cultura rica y vibrante, combinada con playas de ensueño y montañas exuberantes, crea el escenario perfecto para historias de amor inolvidables. Al pronunciar el "sí, acepto" en sus costas doradas, las parejas son acariciadas por la suave brisa del mar y envueltas en los ritmos seductores del reggae. Desde las serenas aguas de Negril hasta las majestuosas cascadas de Ocho Ríos, Jamaica ofrece un mosaico de escenarios naturales donde el romance florece con autenticidad. Aquí, las bodas trascienden lo tradicional: son una celebración de amor enriquecida por el espíritu cálido y acogedor de su gente. Al elegir Jamaica, las parejas no sólo eligen un lugar para casarse, sino un lugar donde los ritmos, sabores y paisajes se entrelazan para crear momentos que durarán toda una vida.',
+        description:'¡Sumérgete en el romance y la belleza caribeña en Jamaica!',
+        desc:'Imagina un escenario idílico donde el amor florece en medio de playas de arena blanca, aguas cristalinas y atardeceres que pintan el cielo en tonos cálidos y vibrantes. En Jamaica, no solo estás planeando una boda, estás creando recuerdos imborrables en un paraíso tropical.',
+        desc2:'Jamaica ofrece mucho más que solo un lugar de boda espectacular. Tú y tus invitados pueden disfrutar de actividades emocionantes, como explorar cascadas impresionantes, sumergirse en aguas cristalinas para hacer snorkel o relajarse en lujosos resorts con vista al mar. No solo estarás compartiendo tu amor, sino también creando recuerdos invaluables con tus seres queridos.',
+        desc3:'Cada momento estará lleno de emociones. Desde el emocionante intercambio de votos hasta el primer baile como cónyuges, estaremos a tu lado en cada paso. Nuestro objetivo es brindarte la tranquilidad de saber que todo está bajo control, permitiéndote sumergirte completamente en la experiencia sin preocupaciones.',
+        desc4:'Nuestro equipo de planificadores de bodas está listo para convertir tus sueños en realidad. Desde el momento en que eliges nuestra oferta de Boda Destino, nos encargamos de cada detalle para que tu día especial sea perfecto en todos los sentidos. Desde la elección del lugar más impresionante, ya sea en una playa privada frente al mar o en exuberantes jardines tropicales, hasta la coordinación de cada aspecto logístico.',
         simg1:simg2,
         ssImg:singleImg2,
         sinnerImg1:jamg1,
         sinnerImg2:jamg2,
+        // sinnerImg3:jamg3,
     },
     {
         id: '3',
         fIcon1:simg6,
-        title:'Puntacana',
-        slug: 'Puntacana',
-        description:'Punta Cana, la joya del Caribe dominicano, brilla con un encanto especial que la convierte en un destino de bodas sin igual. Con kilómetros de playas de arena blanca, bañadas por aguas cristalinas de tonos turquesa, este rincón tropical promete una ceremonia de ensueño bajo palmeras que danzan al ritmo de la brisa marina. Aquí, el romance se encuentra a cada paso, desde los lujosos resorts con vistas al océano hasta las excursiones a islas remotas donde el amor florece en la más íntima de las escapadas.',
-        desc:'Las parejas que eligen Punta Cana para sellar su compromiso se sumergen en una atmósfera donde la hospitalidad dominicana y la magia del Caribe se fusionan. Ya sea que deseen una boda sencilla a orillas del mar, o una gran celebración en elegantes salones, Punta Cana ofrece opciones para cada sueño nupcial. Además, las aventuras post-boda abundan: desde explorar vibrantes arrecifes de coral hasta disfrutar de cenas románticas a la luz de las estrellas. Punta Cana no es sólo un lugar para casarse, sino un paraíso donde comenzar una vida juntos rodeados de belleza y encanto.',
+        title:'Punta Cana',
+        slug: 'Punta Cana',
+        description:'¡Déjate seducir por la magia del Caribe y crea recuerdos inolvidables en Punta Cana!',
+        desc:'En Punta Cana, no solo estarás celebrando tu amor, estarás viviendo un cuento de hadas en uno de los destinos más paradisíacos del mundo.',
+        desc2:'Cada instante estará lleno de emociones. Desde el emocionante intercambio de votos hasta el primer baile como pareja casada, estaremos a tu lado para asegurarnos de que cada momento sea inolvidable. Nuestro objetivo es permitirte sumergirte en la experiencia sin preocupaciones, sabiendo que todo está bajo control y que estás rodeado de profesionales apasionados.',
+        desc3:'Punta Cana ofrece mucho más que solo un escenario de boda espectacular. Tú y tus seres queridos pueden explorar las maravillas del Caribe, desde aventuras submarinas explorando arrecifes de coral hasta relajantes días en resorts de lujo con vistas panorámicas. Al elegir un Boda Destino en Punta Cana, no solo compartes tu amor, sino que también regalas a tus invitados unas vacaciones de ensueño.',
+        desc4:'Nuestro equipo de expertos en bodas está aquí para hacer tus sueños realidad. Desde el momento en que decides confiarnos la planificación de tu boda, nos ocupamos de cada detalle para que tu día especial sea perfecto en todos los aspectos. Desde elegir la ubicación perfecta, ya sea en una playa idílica o en exuberantes jardines tropicales, hasta las actividades para ti y todos tus invitados.',
         simg1:simg3,
         ssImg:singleImg3,
         sinnerImg1:pcmg1,
         sinnerImg2:pcmg2,
+        // sinnerImg3:pcmg3,
     },
     {
         id: '4',
         fIcon1:simg6,
         title:'Riviera Maya',
         slug: 'Riviera-Maya',
-        description:'Riviera Maya, un fragmento de paraíso en la costa del Caribe mexicano, ofrece un escenario mágico para comenzar el viaje de la vida en pareja. Sus extensas playas de arena fina, que contrastan con las aguas azul turquesa, crean el telón de fondo perfecto para un intercambio de votos inolvidable. Los antiguos vestigios mayas y la exuberante selva tropical añaden un toque de misterio y conexión con la naturaleza que pocos lugares pueden igualar.',
-        desc:'Las parejas que deciden unir sus vidas en la Riviera Maya tienen a su disposición una amplia gama de opciones: desde ceremonias íntimas en playas solitarias, hasta lujosas celebraciones en sofisticados resorts. La cultura rica y vibrante de la región se entrelaza en cada boda, ofreciendo la posibilidad de incorporar tradiciones mayas ancestrales en la ceremonia.',
-        desc2:'Más allá del día especial, la Riviera Maya es un tesoro de experiencias románticas: explorar cenotes escondidos, pasear de la mano por la Quinta Avenida de Playa del Carmen o sumergirse en las profundidades del Gran Arrecife Maya. Casarse en la Riviera Maya no es solo celebrar un momento, sino embarcarse en una aventura de amor que perdura en el tiempo, en un entorno de belleza inigualable.',
+        description:'¡Sumérgete en la elegancia tropical y celebra el amor en su máxima expresión en la Riviera Maya!',
+        desc:'Imagina un escenario donde el lujo se fusiona con la naturaleza exuberante, donde las playas de arena blanca y las aguas cristalinas del Caribe son testigos de tu unión. En la Riviera Maya, no solo estás planeando una boda, estás creando un capítulo mágico en tu historia de amor.',
+        desc2:'La Riviera Maya ofrece más que solo un lugar de boda espectacular. Tú y tus invitados pueden explorar antiguas ruinas mayas, sumergirse en cenotes mágicos o disfrutar de lujosos resorts con vistas panorámicas al mar. Al elegir una Boda Destino en la Riviera Maya, no solo compartes tu amor, sino que también brindas a tus seres queridos una experiencia inolvidable.',
+        desc3:'Cada momento estará impregnado de emoción. Desde el emocionante intercambio de votos hasta el primer baile como pareja casada, estaremos a tu lado en cada paso. Nuestro objetivo es brindarte la tranquilidad de saber que todo está bajo control, permitiéndote disfrutar plenamente de la experiencia sin preocupaciones.',
+        desc4:'Nuestro equipo de expertos en bodas está aquí para hacer realidad cada uno de tus sueños. Desde el momento en que decidas confiarnos la planificación de tu boda, nos encargaremos de cada detalle, asegurando que cada aspecto refleje tu estilo y personalidad. Desde la elección del lugar perfecto, ya sea en la playa al atardecer o en impresionantes locaciones frente al mar, hasta las actividades para ti y todos tus invitados.',
         simg1:simg4,
         ssImg:singleImg4,
         sinnerImg1:rmmg1,
         sinnerImg2:rmmg2,
+        // sinnerImg3:rmmg3,
     },
     {
         id: '5',
         fIcon1:simg6,
         title:'Tulum',
         slug: 'Tulum',
-        description:'Tulum, una joya escondida en la Riviera Maya, combina a la perfección lo rústico con lo chic, ofreciendo a las parejas un enclave único para sellar su amor. Con sus playas prístinas, bordeadas por palmeras y frente a las aguas cristalinas del Caribe, Tulum evoca una sensación de tranquilidad y conexión profunda con la naturaleza. A ello se suma el misticismo de sus ancestrales ruinas mayas, que se asoman majestuosas desde acantilados sobre el mar, añadiendo un toque de historia y cultura al escenario.',
-        desc:'Optar por Tulum para celebrar una boda es elegir la simplicidad elegante. Es la promesa de una ceremonia íntima, con los pies descalzos sobre la arena, bajo la sombra de cabañas de techo de palma y con el susurro del mar como banda sonora. Las posadas boutique y eco-resorts ofrecen experiencias personalizadas que resaltan la belleza natural y la esencia bohemia del lugar.',
-        desc2:'Después del "sí, acepto", las parejas pueden sumergirse en la magia de Tulum, desde explorar los cercanos cenotes de aguas azul profundo, hasta relajarse en sofisticados beach clubs o descubrir la gastronomía local en acogedores restaurantes junto al mar. Tulum es más que un destino de boda; es un refugio para almas enamoradas que buscan autenticidad, serenidad y una pizca de aventura en su día especial.',
+        description:'¡Descubre la perfección del amor en el paraíso con nuestra oferta de Boda Destino en Tulum!',
+        desc:'Imagina una boda enmarcada por las playas de arena blanca, el misticismo de las ruinas mayas y el mar turquesa como testigo de tu amor. En Tulum, no solo estás planeando una boda, estás creando una experiencia mágica que quedará grabada en tu corazón para siempre.',
+        desc2:'Cada momento será una obra maestra de emociones. Desde el emotivo intercambio de votos hasta el primer baile como pareja casada, estaremos contigo en cada paso del camino. Nuestro objetivo es brindarte la tranquilidad de saber que todo está cuidadosamente organizado, permitiéndote sumergirte en la experiencia sin preocupaciones.',
+        desc3:'Tulum ofrece más que solo un telón de fondo espectacular para tu boda. Tú y tus seres queridos pueden explorar las ruinas mayas frente al mar, nadar en cenotes cristalinos y disfrutar de la serenidad en resorts boutique de lujo. Al elegir una Boda Destino en Tulum, no solo compartes tu amor, sino también regalas a tus invitados una experiencia inolvidable.',
+        desc4:'Nuestro equipo de expertos en bodas está aquí para hacer realidad cada uno de tus sueños. Desde el momento en que decidas confiarnos la planificación de tu boda, nos encargaremos de cada detalle, asegurando que cada aspecto refleje tu estilo y personalidad. Desde la elección del lugar perfecto, ya sea en la playa al atardecer o en impresionantes locaciones frente al mar, hasta las actividades para ti y todos tus invitados.',
         simg1:simg5,
         ssImg:singleImg5,
         sinnerImg1:tmg1,
         sinnerImg2:tmg2,
+        // sinnerImg3:tmg3,
     }
 ]
