@@ -39,7 +39,7 @@ const LoginPage = (props) => {
         const respuesta = await clienteAxios.post('/login',value)
         console.log(respuesta)
         toast.success('Has iniciado sesión correctamente')
-        router.push('/');
+        router.push('http://localhost:5173/');
   
     } catch (error) {
         console.log(error)

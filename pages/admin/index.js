@@ -1,121 +1,40 @@
-import React, { useState } from 'react';
-import clienteAxios from '../../api/axios';
-import SimpleReactValidator from "simple-react-validator";
-import { toast } from "react-toastify";
+import React, { Fragment } from 'react';
+import { useRouter } from 'next/router'
+import blogs from '../../api/blogs'
+import Header2 from '../../components/header2'
 
-const AddProductForm = () => {
-  const [value, setValue] = useState({
-    slug: '',
-    proImg: '',
-    title: '',
-    price: '',
-    delPrice: '',
-    brand: '',
-    size: '',
-  });
-
-  const changeHandler = (e) => {
-    setValue({ ...value, [e.target.name]: e.target.value });
-    validator.showMessages();
-  };
-
-  const [validator] = useState(
-    new SimpleReactValidator({
-      className: 'errorMessage'
-    })
-  );
+const submitHandler = (e) => {
+    e.preventDefault()
+}
 
 
-  const submitForm = async (e) => {
-    e.preventDefault();
-    try {
-        const respuesta = await clienteAxios.post('/products',value)
-        console.log(respuesta)
-        toast.success('El producto se agrego correctamnte');
-  
-    } catch (error) {
-        console.log(error)
-        toast.error('Hubo un error!');
-    }
-  };
+const BlogSingle = (props) => {
+    const router = useRouter()
 
-  return (
-    <div>
-      <h1>Agregar Producto</h1>
-      <form onSubmit={submitForm}>
-        <div>
-          <label>Slug:</label>
-          <input
-            type="text"
-            name="slug"
-            value={value.slug}
-            onChange={(e) => changeHandler(e)}
-            required
-          />
+    const BlogDetails = blogs.find(item => item.slug === router.query.slug)
+
+
+    return (
+        <Fragment>
+            <Header2/>
+            
+            <div class="grid xl:grid-cols-2 grid-cols-1 gap-6"></div>
+           <div class="z-[9]" id="app_header">
+          <div class="app-header z-[999] ltr:ml-[248px] rtl:mr-[248px] bg-white dark:bg-slate-800 shadow-sm dark:shadow-slate-700">
+            <div class="flex justify-between items-center h-full">
+              <div class="flex items-center vertical-box">
+              </div>
+           
+           <h3>Bienvenido </h3>
+           
+
+
+              <div class="card-text h-full">
+           </div>
+          </div>
         </div>
-        <div>
-          <label>Imagen del Producto:</label>
-          <input
-            type="text"
-            name="proImg"
-            value={value.proImg}
-            onChange={(e) => changeHandler(e)}
-            required
-          />
         </div>
-        <div>
-          <label>Título:</label>
-          <input
-            type="text"
-            name="title"
-            value={value.title}
-            onChange={(e) => changeHandler(e)}
-            required
-          />
-        </div>
-        <div>
-          <label>Precio:</label>
-          <input
-            type="number"
-            name="price"
-            value={value.price}
-            onChange={(e) => changeHandler(e)}
-            required
-          />
-        </div>
-        <div>
-          <label>Precio de Descuento:</label>
-          <input
-            type="number"
-            name="delPrice"
-            value={value.delPrice}
-            onChange={(e) => changeHandler(e)}
-            required
-          />
-        </div>
-        <div>
-          <label>Marca:</label>
-          <input
-            type="text"
-            name="brand"
-            value={value.brand}
-            onChange={(e) => changeHandler(e)}
-            required
-          />
-        </div>
-        <div>
-          <label>Tamaño:</label>
-          <input
-            type="text"
-            name="size"
-            value={value.size}
-            onChange={(e) => changeHandler(e)}
-          />
-        </div>
-        <button type="submit">Agregar</button>
-      </form>
-    </div>
-  );
+        </Fragment>
+    )
 };
-
-export default AddProductForm;
+export default BlogSingle;

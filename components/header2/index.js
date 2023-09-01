@@ -65,131 +65,17 @@ class Header2 extends Component {
                   <div id="navbar" className="collapse navbar-collapse navigation-holder">
                     <button className="menu-close"><i className="ti-close"></i></button>
                     <ul className="nav navbar-nav mb-2 mb-lg-0">
-                      <li className="menu-item-has-children">
-                        <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} >Home</Link>
-                        <ul className="sub-menu">
-                          <li><NavLink onClick={ClickHandler} href="/home">Main Home</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/home2">Wedding Planner</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/home3">Announcement S1</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/home4">Announcement S2</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/home5">Wedding Home</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/home6">Shop Home</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/home7">Invitation</NavLink></li>
-                        </ul>
-                      </li>
-                      <li><Link activeClass="active" to="couple" spy={true} smooth={true} duration={500} offset={-100}>Couple</Link></li>
-                      <li><Link activeClass="active" to="story" spy={true} smooth={true} duration={500} offset={-50}>Story</Link></li>
-                      <li><Link activeClass="active" to="gallery" spy={true} smooth={true} duration={500} offset={-100}>Gallery</Link></li>
-                      <li><Link activeClass="active" to="RSVP" spy={true} smooth={true} duration={500} offset={-50}>RSVP</Link></li>
-                      <li><Link activeClass="active" to="events" spy={true} smooth={true} duration={500} offset={-50}>Events</Link></li>
-                      <li className="menu-item-has-children">
-                        <NavLink onClick={ClickHandler} href="/blog">Blog</NavLink>
-                        <ul className="sub-menu">
-                          <li><NavLink onClick={ClickHandler} href="/blog">Blog right sidebar</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/blog-left-sidebar">Blog left sidebar</NavLink></li>
-                          <li><NavLink onClick={ClickHandler} href="/blog-fullwidth">Blog fullwidth</NavLink></li>
-                          <li className="menu-item-has-children">
-                            <NavLink onClick={ClickHandler} href="/">Blog details</NavLink>
-                            <ul className="sub-menu">
-                              <li><NavLink onClick={ClickHandler} href="/blog-single/1">Blog details right sidebar</NavLink>
-                              </li>
-                              <li><NavLink onClick={ClickHandler} href="/blog-single-left-sidebar/1">Blog details left
-                                sidebar</NavLink></li>
-                              <li><NavLink onClick={ClickHandler} href="/blog-single-fullwidth/1">Blog details
-                                fullwidth</NavLink></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
+                      
+                      <li><NavLink href="/admin">INICIO</NavLink></li>
+                      <li><NavLink href="/agregar-novios" >AGREGAR NOVIOS</NavLink></li>
+                      <li><NavLink href="/agregar-regalos" >AGREGAR REGALOS</NavLink></li>
+                      <li><NavLink href="/agregar-ordenes" >AGREGAR ORDENES</NavLink></li>
+                      <li><NavLink href="/ajustes" >AJUSTES</NavLink></li>
+                      
                     </ul>
 
                   </div>
-                </div>
-                <div className="col-lg-3 col-md-2 col-2">
-                  <div className="header-right">
-                    <div className="header-search-form-wrapper">
-                      <div className="cart-search-contact">
-                        <button onClick={this.searchHandler} className="search-toggle-btn"><i
-                          className={`${isSearchShow ? 'ti-close' : 'ti-search'}`}></i></button>
-                        <div className={`header-search-form ${isSearchShow ? 'header-search-content-toggle' : ''}`}>
-                          <form onSubmit={SubmitHandler}>
-                            <div>
-                              <input type="text" className="form-control"
-                                placeholder="Search here..." />
-                              <button type="submit"><i
-                                className="fi flaticon-search"></i></button>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mini-cart">
-                      <button
-                        onClick={this.cartHandler}
-                        className="cart-toggle-btn"
-                      >
-                        {" "}
-                        <i className="fi flaticon-shopping-cart"></i>{" "}
-                        <span className="cart-count">{carts.length}</span>
-                      </button>
-                      <div
-                        className={`mini-cart-content ${isCartShow ? "mini-cart-content-toggle" : ""
-                          }`}
-                      >
-                        <button
-                          onClick={this.cartHandler}
-                          className="mini-cart-close"
-                        >
-                          <i className="ti-close"></i>
-                        </button>
-                        <div className="mini-cart-items">
-                          {carts &&
-                            carts.length > 0 &&
-                            carts.map((cart, i) => (
-                              <div className="mini-cart-item clearfix" key={i}>
-                                <div className="mini-cart-item-image">
-                                  <img src={cart.proImg} alt="icon" />
-                                </div>
-                                <div className="mini-cart-item-des">
-                                  <p>{cart.title}</p>
-                                  <span className="mini-cart-item-price">
-                                    ${cart.price}
-                                  </span>
-                                  <span className="mini-cart-item-quantity">
-                                    <button
-                                      onClick={() =>
-                                        this.props.removeFromCart(cart.id)
-                                      }
-                                      className="btn btn-sm btn-danger"
-                                    >
-                                      <i className="ti-close"></i>
-                                    </button>{" "} {cart.qty}
-                                  </span>
-                                </div>
-                              </div>
-                            ))}
-
-                        </div>
-                        <div className="mini-cart-action clearfix">
-                          <span className="mini-checkout-price">
-                            Total: ${totalPrice}
-                          </span>
-                          <div className="mini-btn">
-                            <NavLink href="/checkout" className="view-cart-btn s1">
-                              Checkout
-                            </NavLink>
-                            <NavLink href="/cart" className="view-cart-btn">
-                              View Cart
-                            </NavLink>
-                          </div>
-                        </div>
-                        <div className="visible-icon">
-                          <img src='/images/love.png' alt="icon" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </div>                
               </div>
             </div>
           </nav>

@@ -42,18 +42,18 @@ const HomePage = (props) => {
                 {/* <VideoSection/> */}
                 {/* <FunFact/> */}
                 <ProjectSection/>
-                <Testimonial/>
+                {/* <Testimonial/> */}
                 {/* <Product
                     addToCartProduct={addToCartProduct}
                     products={products}
                     
                 /> */}
-                <CtaSection/>
-                <PricingSection/>
-                <BannerSection/>
+                {/* <CtaSection/> */}
+                {/* <PricingSection/> */}
+                {/* <BannerSection/> */}
                 <RSVP/>
                 <BlogSection/>
-                <Team/>
+                {/* <Team/> */}
                 <Footer/>
             </div>
             <Scrollbar />

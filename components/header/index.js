@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 import Link from "next/link";
 import MobileMenu from "../../components/MobileMenu";
 import { removeFromCart } from "../../store/actions/action";
-import {totalPrice} from "../../utils";
+import { totalPrice } from "../../utils";
 import HeaderTopbar from "../HeaderTopbar";
+import { Services } from '../../api/service'
 
 class Header extends Component {
   state = {
@@ -40,7 +41,7 @@ class Header extends Component {
 
     return (
       <header id="header" className={this.props.topbarNone}>
-        <HeaderTopbar/>
+        <HeaderTopbar />
         <div className={`wpo-site-header ${this.props.hclass}`}>
           <nav className="navigation navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
@@ -52,8 +53,8 @@ class Header extends Component {
                 </div>
                 <div className="col-lg-3 col-md-6 col-6">
                   <div className="navbar-header">
-                    <Link onClick={ClickHandler} className="navbar-brand" href="/"><img src='/images/logo1.png'
-                      alt="" /></Link>
+                    <Link onClick={ClickHandler} className="navbar-brand" href="/"><img src='/images/logo3.png'
+                      alt="" style={{ marginLeft: '35px' }} /></Link>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-1 col-1">
@@ -69,17 +70,28 @@ class Header extends Component {
 
                       </li>
                       <li className="menu-item-has-children">
-                        <Link href="/service-s2">Bodas - Destinos</Link>
+                        <Link href="/service-s2">Bodas Destino</Link>
                         <ul className="sub-menu">
-                          <li><Link href="/service/Photography">Destino 1</Link></li>
-                          <li><Link href="/service/Photography">Destino 2</Link></li>
-                          <li><Link href="/service/Photography">Destino 3</Link></li>
-                          <li><Link href="/service/Photography">Destino 4</Link></li>
+                          {Services.map((service, sitem) => (
+                            <li key={sitem}>
+                              <Link onClick={ClickHandler} href='/service/[slug]' as={`/service/${service.slug}`}>
+                                {service.title}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
-
                       </li>
                       <li className="menu-item-has-children">
-                        <Link href="/project/Maria-Nevela">Luna de Miel</Link>
+                        <Link href="#">Luna de Miel</Link>
+                        <ul className="sub-menu">
+                          <li><Link href="/service-s2">Destinos</Link></li>
+                          <li><Link href="#">Fondo Mielero</Link>
+                            <ul className="sub-menu">
+                              <li><Link href="/info">¿Como funciona?</Link></li>
+                              <li><Link href="/regalo">Regalar</Link></li>
+                            </ul>
+                          </li>
+                        </ul>
                         {/* <ul className="sub-menu">
                           <li><Link href="/portfolio-grid">Portfolio Grid</Link></li>
                           <li><Link href="/portfolio-mashonary">Portfolio Mashonary</Link></li>
@@ -87,13 +99,13 @@ class Header extends Component {
                           <li><Link href="/project/Maria-Nevela">Portfolio Single</Link></li>
                         </ul> */}
                       </li>
-                      <li className="menu-item-has-children">
-                        <Link href="/shop">Regalar</Link>
+                      {/* <li className="menu-item-has-children">
+                        <Link href="http://localhost:3030/">Regalar</Link>
 
-                      </li>
+                      </li> */}
                       <li className="menu-item-has-children">
                         <Link onClick={ClickHandler} href="/contact">Contacto</Link>
-        
+
                       </li>
                     </ul>
 
@@ -101,16 +113,16 @@ class Header extends Component {
                 </div>
                 <div className="col-lg-3 col-md-2 col-2">
                   <div className="header-right">
-                  <div id="navbar" className="collapse navbar-collapse navigation-holder">
-                    <ul>
-                      <li><Link onClick={ClickHandler} href="/login">Login</Link></li>
-                    </ul>
-                    <ul>
-                      <li><Link onClick={ClickHandler} href="/register">Registro</Link></li>
-                    </ul>
+                    <div id="navbar" className="collapse navbar-collapse navigation-holder">
+                      <ul>
+                        <li><Link onClick={ClickHandler} href="/login">Login</Link></li>
+                      </ul>
+                      <ul>
+                        <li><Link onClick={ClickHandler} href="/register">Registro</Link></li>
+                      </ul>
                     </div>
-                    
-                    <div className="header-search-form-wrapper">
+
+                    {/* <div className="header-search-form-wrapper">
                       <div className="cart-search-contact">
                         <button onClick={this.searchHandler} className="search-toggle-btn"><i
                           className={`${isSearchShow ? 'ti-close' : 'ti-search'}`}></i></button>
@@ -182,16 +194,14 @@ class Header extends Component {
                             <Link onClick={ClickHandler} href="/checkout" className="view-cart-btn s1">Pagar</Link>
                             <Link onClick={ClickHandler} href="/cart" className="view-cart-btn">Ver Carrito</Link>
                           </div>
-                        </div>
-                        <div className="visible-icon">
-                          <img src='/images/love.png' alt="icon" />
-                        </div>
-                      </div>
-                    </div>
+                        </div> */}
+
                   </div>
                 </div>
               </div>
             </div>
+            {/* </div>
+            </div> */}
           </nav>
         </div>
       </header>

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { Services } from '../../api/service'
 import Link from 'next/link'
 import Image from "next/image";
+import SectionTitle from '../../components/SectionTitle';
 
 
 const ServiceSection = (props) => {
@@ -61,6 +62,7 @@ const ServiceSection = (props) => {
 
         <section className={`wpo-service-section ${props.pbClass}`}>
             <div className="container">
+                <SectionTitle topTitle={'Destinos'} MainTitle={'Algunos destinos para tu boda perfecta'} />
                 <div className="wpo-service-active owl-carousel">
                     <Slider {...settings}>
                         {Services.map((service, sitem) => (
@@ -69,7 +71,7 @@ const ServiceSection = (props) => {
                                     <Image src={service.simg1} alt="" />
                                     <div className="wpo-service-text">
                                         <div className="s-icon">
-                                            <i className={`fi  ${service.fIcon1}`}></i>
+                                            <Image src={service.fIcon1} alt="Icono" width={20} height={20} />
                                         </div>
                                         <Link onClick={ClickHandler} href='/service/[slug]' as={`/service/${service.slug}`}>{service.title}</Link>
                                     </div>

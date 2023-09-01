@@ -17,7 +17,7 @@ const ShopProduct = ({ products, addToCartProduct }) => {
                 <div className="col-xl-4 col-lg-6 col-md-6 col-12" key={pitem}>
                   <div className="wpo-product-item">
                     <div className="wpo-product-img">
-                      <img src={product.proImg} alt={product.title} />
+                    <img src={`https://back.traveleroweddings.com/uploads/${product._id}`} alt={product.title} />
                       <button
                         data-bs-toggle="tooltip"
                         data-bs-html="true"

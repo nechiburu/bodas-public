@@ -12,10 +12,10 @@ const ServiceS2Page = (props) => {
     return (
         <div>
             <Navbar />
-            <PageTitle pageTitle={'Service'} pagesub={'Service'} />
+            <PageTitle pageTitle={'Destinos'} pagesub={'Destinos'} />
             <ServiceSection pbClass={'pt-70'}/>
-            <FunFact fClass={'wpo-fun-fact-section-s2 section-padding pt-0'} />
-            <PricingSection ptClass={'pt-0'} />
+            {/* <FunFact fClass={'wpo-fun-fact-section-s2 section-padding pt-0'} />
+            <PricingSection ptClass={'pt-0'} /> */}
             <Footer />
             <Scrollbar />
         </div>

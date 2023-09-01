@@ -15,13 +15,13 @@ const AboutPage = (props) => {
     return (
         <div>
             <Navbar/>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
+            <PageTitle pageTitle={'Nosotros'} pagesub={'Nosotros'}/> 
             <About2/>
-            <ServiceSection pbClass={'pb-0'}/>
+            {/* <ServiceSection pbClass={'pb-0'}/>
             <FunFact fClass={'wpo-fun-fact-section-s2 section-padding'}/>
             <ProjectSection/>
             <PricingSection ptClass={'pt-0 pb-0'}/>
-            <TeamSection/>
+            <TeamSection/> */}
             <Footer/>
             <Scrollbar/>
         </div>

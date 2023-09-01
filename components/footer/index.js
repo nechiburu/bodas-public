@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Projects from '../../api/projects'
 import Image from 'next/image';
-import Logo from '/public/images/logo.png'
+import Logo from '/public/images/logo3.png'
 import { FaTiktok } from 'react-icons/fa';
 
 const Footer = (props) => {
@@ -16,13 +16,12 @@ const Footer = (props) => {
             <div className="wpo-upper-footer">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div className="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <Image src={Logo} alt="logo" />
+                                    <Image src={Logo} alt="logo" style={{ marginLeft: '55px' }}/>
                                 </div>
-                                <p>Welcome and open yourself to your truest love this year with us! With the Release
-                                    Process</p>
+                                <p>Embárcate en un viaje hacia el amor eterno, donde cada momento se convierte en un recuerdo inolvidable.</p>
                                 <ul>
                                     <li>
                                         <Link onClick={ClickHandler} href="https://www.facebook.com/viajestravelerobo" target="_blank" rel="noopener noreferrer">
@@ -47,7 +46,7 @@ const Footer = (props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div className="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-auto">
                             <div className="widget link-widget">
                                 <div className="widget-title">
                                     <h3>Información</h3>
@@ -57,11 +56,11 @@ const Footer = (props) => {
                                     <li><Link onClick={ClickHandler} href="/portfolio">Lunas de Miel</Link></li>
                                     {/* <li><Link onClick={ClickHandler} href="/blog">Latest News</Link></li> */}
                                     <li><Link onClick={ClickHandler} href="/contact">Contáctanos</Link></li>
-                                    <li><Link onClick={ClickHandler} href="/service">Nuestros Servicios</Link></li>
+                                    <li><Link onClick={ClickHandler} href="/service">Destinos</Link></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div className="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div className="widget wpo-service-link-widget">
                                 <div className="widget-title">
                                     <h3>Contacto </h3>
@@ -69,25 +68,12 @@ const Footer = (props) => {
                                 <div className="contact-ft">
                                     <p>Si tienes alguna consulta, sientete libre de comunicarte con nosotros</p>
                                     <ul>
-                                        <li><i className="fi flaticon-email"></i>reservas@travelerocorp.com</li>
-                                        <li><i className="fi flaticon-phone-call"></i><a href="https://wa.me/59169203758" target="_blank" rel="noopener noreferrer" style={{ color: '#5880a2' }}>+591 69203758</a></li>
+                                        <li><i className="fi flaticon-email"></i>weddings@travelerocorp.com</li>
+                                        <li><i className="fi flaticon-phone-call"></i><a href="https://wa.me/59169203728" target="_blank" rel="noopener noreferrer" style={{ color: '#5880a2' }}>+591 69203728</a></li>
                                         <li><i className="fi flaticon-maps-and-flags"></i>Avenida San Martin, SCZ
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="widget instagram">
-                                <div className="widget-title">
-                                    <h3>Instagram</h3>
-                                </div>
-                                <ul className="d-flex">
-                                    {Projects.slice(9, 15).map((project, pitem) => (
-                                        <li key={pitem}><img src={project.pimg1} alt="" /></li>
-                                    ))}
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -97,7 +83,7 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col col-xs-12">
-                            <p className="copyright"> &copy; 2023 Viajes Travelero. Diseñado por <Link onClick={ClickHandler} href="/">wpOceans</Link>. Todos los derechos reservados.</p>
+                            <p className="copyright"> &copy; 2023 Viajes Travelero. Todos los derechos reservados.</p>
                         </div>
                     </div>
                 </div>

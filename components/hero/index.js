@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import  Link  from 'next/link'
+import Link from 'next/link'
 
 
 
@@ -28,15 +28,15 @@ const Hero = () => {
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">
-                                            <h2>Our DREAMY Love</h2>
+                                            <h2>Amor soñado</h2>
                                         </div>
                                         <div className="slide-text">
-                                            <p>Welcome and open yourself to your truest love this year with us! With the
-                                                Release Process</p>
+                                            <p>¡Bienvenidos! Únete a nosotros para celebrar el amor
+                                                verdadero.</p>
                                         </div>
                                         <div className="clearfix"></div>
                                         <div className="slide-btns">
-                                            <Link href="/about" className="theme-btn">Discover More</Link>
+                                            <Link href="/about" className="theme-btn">Conocer Más</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -47,34 +47,34 @@ const Hero = () => {
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">
-                                            <h2>Our DREAMY Love</h2>
+                                            <h2>Amor soñado</h2>
                                         </div>
                                         <div className="slide-text">
-                                            <p>Welcome and open yourself to your truest love this year with us! With the
-                                                Release Process</p>
+                                            <p>¡Bienvenidos! Únete a nosotros para celebrar el amor
+                                                verdadero.</p>
                                         </div>
                                         <div className="clearfix"></div>
                                         <div className="slide-btns">
-                                            <Link href="/about" className="theme-btn">Discover More</Link>
+                                            <Link href="/about" className="theme-btn">Conocer Más</Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/test1.jpg'})` }}>
+                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/pareja3.jpg'})` }}>
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">
-                                            <h2>Our DREAMY Love</h2>
+                                            <h2>Amor soñado</h2>
                                         </div>
                                         <div className="slide-text">
-                                            <p>Welcome and open yourself to your truest love this year with us! With the
-                                                Release Process</p>
+                                            <p>¡Bienvenidos! Únete a nosotros para celebrar el amor
+                                                verdadero.</p>
                                         </div>
                                         <div className="clearfix"></div>
                                         <div className="slide-btns">
-                                            <Link href="/about" className="theme-btn">Discover More</Link>
+                                            <Link href="/about" className="theme-btn">Conocer Más</Link>
                                         </div>
                                     </div>
                                 </div>

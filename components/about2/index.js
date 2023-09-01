@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import abimg from '/public/images/about/1.png'
-import abimg3 from '/public/images/about/shape.png'
-import abimg4 from '/public/images/about/thumb.png'
+import abimg from '../../public/images/about/a1.jpg'
+import abimg3 from '../../public/images/about/shape.png'
+import abimg4 from '../../public/images/about/thumb.png'
 
 
 const About2 = (props) => {
@@ -31,19 +31,21 @@ const About2 = (props) => {
                                 </div>
                             </div>
                             <div className="wpo-about-icon-content">
-                                <h2>Planner of Your Perfect Wedding</h2>
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
-                                    that it has a more-or-less normal distribution of letters, as opposed to using
-                                </p>
+                                <h2>Tu Compañero Ideal para Bodas de Ensueño</h2>
+                                <p>En un día tan especial como es la boda, cada detalle importa.
+                                    En TraveleroWeddings, entendemos que cada pareja es única y por ello,
+                                    cada boda debería serlo también. Nos dedicamos a transformar tus
+                                    visiones en realidad, llevando a cabo bodas en destinos soñados que
+                                    reflejen auténticamente la esencia de cada pareja.</p>
                                 <p>
-                                    Content here, content here', making it look like readable English. Many desktop
-                                    publishing packages and web page editors now use Lorem Ipsum as their default
-                                    model text.</p>
+                                    Con años de experiencia en el mundo nupcial, contamos con una amplia
+                                    gama de destinos y servicios que se adaptan a todas las necesidades y deseos.
+                                    Ya sea que busques un lugar íntimo, exótico o tradicional, nos encargamos
+                                    de todo para que tú solo tengas que disfrutar de tu día.</p>
                                 <ul>
-                                    <li>Going through the cites of the word in classNameical.</li>
-                                    <li>There are many variations of passages.</li>
-                                    <li>Making it look like readable and spoken English.</li>
+                                    <li>Destinos personalizados que se adaptan a tu estilo y visión.</li>
+                                    <li>Testimonios y experiencias de parejas que ya han vivido su gran día con nosotros.</li>
+                                    <li>Facilidad de regalos para invitados, asegurando que cada detalle sea memorable.</li>
                                 </ul>
                             </div>
                         </div>

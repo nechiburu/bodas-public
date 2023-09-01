@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const clienteAxios = axios.create({
-    baseURL : 'http://localhost:4001'
+    baseURL : 'https://back.traveleroweddings.com/api'
 });
 
 export default clienteAxios;

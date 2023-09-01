@@ -14,8 +14,8 @@ const HeaderTopbar = () => {
                     <div className="col col-lg-7 col-md-12 col-12">
                         <div className="contact-intro">
                             <ul>
-                                <li><i className="fi flaticon-email"></i>reservas@travelerocorp.com</li>
-                                <li><i className="fi flaticon-phone-call"></i><a href="https://wa.me/59169203758" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>+591 69203758</a></li>
+                                <li><i className="fi flaticon-email"></i>weddings@travelerocorp.com</li>
+                                <li><i className="fi flaticon-phone-call"></i><a href="https://wa.me/59169203728" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>+591 69203728</a></li>
                                 <li><i className="fi flaticon-maps-and-flags"></i>Avenida San Martin, SCZ</li>
                             </ul>
                         </div>

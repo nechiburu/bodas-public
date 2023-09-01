@@ -3,6 +3,9 @@ import Image from 'next/image'
 import SectionTitle from '../../components/SectionTitle'
 import vec1 from '/public/images/contact/1.png'
 import vec2 from '/public/images/contact/2.png'
+import clienteAxios from '../../api/axios'
+import { toast, ToastContainer } from 'react-toastify'; // Importa ToastContainer y toast
+import 'react-toastify/dist/ReactToastify.css'; // Importa los estilos
 
 class RSVP extends Component {
 
@@ -10,10 +13,11 @@ class RSVP extends Component {
     state = {
         name: '',
         email: '',
-        address: '',
-        meal: '',
-        service: '',
+        destino: '',
+        boda: '',
+        presupuesto: '',
         guest: '',
+        telefono: '',
         error: {}
     }
 
@@ -28,14 +32,15 @@ class RSVP extends Component {
         })
     }
 
-    subimtHandler = (e) => {
+    subimtHandler = async (e) => {
         e.preventDefault();
 
         const { name,
             email,
-            address,
-            service,
-            meal,
+            destino,
+            boda,
+            presupuesto,
+            telefono,
             guest, error } = this.state;
 
         if (name === '') {
@@ -44,17 +49,20 @@ class RSVP extends Component {
         if (email === '') {
             error.email = "Por favor ingresa tu correo";
         }
-        if (address === '') {
-            error.address = "Por favor ingresa tu dirección";
+        if (destino === '') {
+            error.destino = "Por favor selecciona tu destino deseado";
         }
-        if (service === '') {
-            error.service = "Por favor selecciona tu servicio";
+        if (boda === '') {
+            error.boda = "Por favor selecciona tu tipo de boda";
         }
         if (guest === '') {
             error.guest = "Por favor selecciona el número de invitados";
         }
-        if (meal === '') {
-            error.meal = "Por favor selecciona tu cena";
+        if (presupuesto === '') {
+            error.presupuesto = "Por favor selecciona tu presupuesto";
+        }
+        if (telefono === '') {
+            error.telefono = "Por favor ingresa tu telefono";
         }
 
 
@@ -63,86 +71,118 @@ class RSVP extends Component {
                 error
             })
         }
-        if (error.name === '' && error.email === '' && error.email === '' && error.service === '' && error.address === '' && error.meal === '' && error.guest === '') {
-            this.setState({
-                name: '',
-                email: '',
-                address: '',
-                meal: '',
-                guest: '',
-                error: {}
-            })
-        }
-    }
 
-    render(){
+        if (!error.name && !error.email && !error.boda && !error.destino && !error.presupuesto && !error.guest && !error.telefono) {
+            try {
+              const response = await clienteAxios.post('/send-email', {
+                name,
+                email,
+                destino,
+                boda,
+                presupuesto,
+                telefono,
+                guest,
+              });
+      
+              console.log(response.data); // Puedes mostrar una notificación o manejar la respuesta de acuerdo a tus necesidades
+              toast.success('Correo enviado exitosamente')
+            } catch (error) {
+              console.error(error);
+              toast.error('Error al enviar el correo')
+            }
+      
+            this.setState({
+              name: '',
+              email: '',
+              destino: '',
+              boda: '',
+              presupuesto: '',
+              telefono: '',
+              guest: '',
+              error: {},
+            });
+          }
+        };
+
+    render() {
         const { name,
             email,
-            address,
-            service,
+            destino,
+            boda,
             guest,
-            meal,
+            presupuesto,
+            telefono,
             error } = this.state;
 
-        return(
+        return (
             <section className="wpo-contact-section section-padding" id="RSVP">
                 <div className="container">
                     <div className="wpo-contact-section-wrapper">
                         <div className="wpo-contact-form-area">
-                            <SectionTitle topTitle={'Conozcámonos'} MainTitle={'Realiza una Consulta'}/>
+                            <SectionTitle topTitle={'Conozcámonos'} MainTitle={'Realiza una Consulta'} />
                             <form onSubmit={this.subimtHandler} className="form">
                                 <div className="row">
                                     <div>
                                         <div className="form-field">
-                                            <input value={name} onChange={this.changeHandler} className="form-control" type="text" name="name" placeholder="Nombre"/>
+                                            <input value={name} onChange={this.changeHandler} className="form-control" type="text" name="name" placeholder="Nombre" />
                                             <p>{error.name ? error.name : ''}</p>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="form-field">
-                                            <input onChange={this.changeHandler} value={email} type="email" className="form-control" name="email" placeholder="Email"/>
+                                            <input onChange={this.changeHandler} value={email} type="email" className="form-control" name="email" placeholder="Email" />
                                             <p>{error.email ? error.email : ''}</p>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="form-field">
-                                            <input onChange={this.changeHandler} value={address} type="text" className="form-control" name="address" placeholder="Dirección"/>
-                                            <p>{error.address ? error.address : ''}</p>
+                                            <input value={telefono} onChange={this.changeHandler} className="form-control" type="number" name="telefono" placeholder="Telefono" />
+                                            <p>{error.telefono ? error.telefono : ''}</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <select name="service" className="form-control" value={service} onChange={this.changeHandler}>
-                                            <option>Servicio</option>
-                                            <option>Photography</option>
-                                            <option>The Rehearsal Dinner</option>
-                                            <option>The Afterparty</option>
-                                            <option>Videographers</option>
-                                            <option>Perfect Cake</option>
-                                            <option>All Of The Above</option>
+                                        <select name="destino" className="form-control" value={destino} onChange={this.changeHandler}>
+                                            <option disabled value="">
+                                                Seleccionar destino
+                                            </option>
+                                            <option>cancun</option>
+                                            <option>punta cana</option>
+                                            <option>jamaica</option>
+                                            <option>Riviera Maya</option>
+                                            <option>Tulum</option>
+                                            <option>Otro</option>
+
                                         </select>
-                                        <p>{error.service ? error.service : ''}</p>
+                                        <p>{error.destino ? error.destino : ''}</p>
                                     </div>
                                     <div>
-                                        <select name="guest" className="form-control" value={guest} onChange={this.changeHandler}>
-                                            <option>Número de invitados</option>
-                                            <option>01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                            <option>04</option>
-                                            <option>05</option>
+                                        <select name="boda" className="form-control" value={boda} onChange={this.changeHandler}>
+
+                                            <option disabled value="">
+                                                Seleccionar tipo  de boda
+                                            </option><option>simbolica</option>
+                                            <option>religiosa</option>
+                                            <option>legal</option>
                                         </select>
-                                        <p>{error.guest ? error.guest : ''}</p>
+                                        <p>{error.boda ? error.boda : ''}</p>
                                     </div>
                                     <div>
-                                        <select name="meal" className="form-control last" value={meal} onChange={this.changeHandler}>
-                                            <option>Cena deseada</option>
-                                            <option>Chicken Soup</option>
-                                            <option>Motton Kabab</option>
-                                            <option>Chicken BBQ</option>
-                                            <option>Mix Salad</option>
-                                            <option>Beef Ribs </option>
+                                        <div className="form-field">
+                                            <input onChange={this.changeHandler} value={guest} type="number" className="form-control" name="guest" placeholder="Invitados" />
+                                            <p>{error.guest ? error.guest : ''}</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <select name="presupuesto" className="form-control last" value={presupuesto} onChange={this.changeHandler}>
+                                            <option disabled value="">
+                                                Seleccionar el presupuesto por persona disponible
+                                            </option>
+                                            <option>1300 -1500</option>
+                                            <option>1500-1800</option>
+                                            <option>1800-2200</option>
+                                            <option>2200 o superior</option>
                                         </select>
-                                        <p>{error.meal ? error.meal : ''}</p>
+                                        <p>{error.presupuesto ? error.presupuesto : ''}</p>
                                     </div>
                                     <div className="submit-area">
                                         <div className="form-submit">
@@ -154,10 +194,10 @@ class RSVP extends Component {
                             <div className="border-style"></div>
                         </div>
                         <div className="vector-1">
-                            <Image src={vec1} alt=""/>
+                            <Image src={vec1} alt="" />
                         </div>
                         <div className="vector-2">
-                            <Image src={vec2} alt=""/>
+                            <Image src={vec2} alt="" />
                         </div>
                     </div>
                 </div>
@@ -166,4 +206,4 @@ class RSVP extends Component {
     }
 
 }
-export default  RSVP;
+export default RSVP;

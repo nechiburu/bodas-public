@@ -33,7 +33,7 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Correo</h2>
-                                            <p>reservas@travelerocorp.com</p>
+                                            <p>weddings@travelerocorp.com</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -46,7 +46,7 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>WhatsApp</h2>
-                                            <a href="https://wa.me/59169203758" target="_blank" rel="noopener noreferrer"  style={{ color: '#738ea5' }}>+591 69203758</a>
+                                            <a href="https://wa.me/59169203728" target="_blank" rel="noopener noreferrer"  style={{ color: '#738ea5' }}>+591 69203728</a>
                                         </div>
                                     </div>
                                 </div> 

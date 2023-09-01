@@ -49,7 +49,7 @@ const PricingSection = (props) => {
     return(
         <section className={`wpo-pricing-section section-padding ${props.ptClass}`}>
             <div className="container">
-                 <SectionTitle topTitle={'Pricing'} MainTitle={'Wedding Packages'}/>
+                 <SectionTitle topTitle={'Precios'} MainTitle={'Paquetes de bodas'}/>
                 <div className="wpo-pricing-wrap">
                     <div className="row">
                         {Pricing.map((pricing, pitem) => (

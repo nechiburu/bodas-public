@@ -31,18 +31,14 @@ const SeviceSinglePage = (props) => {
                         <div className="col-lg-8 col-12">
                             <div className="wpo-minimal-wrap">
                                 <div className="wpo-minimal-img">
-                                    <Image src={serviceDetails?.ssImg} alt="" />
+                                    <Image src={serviceDetails?.simg1} alt="" />
                                 </div>
                             </div>
                             <div className="wpo-p-details-section">
-                                <h5>Project Requirement</h5>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                                    need to be sure there isn't anything embarrassing hidden in the middle.</p>
-                                <p>The majority have suffered alteration in some form or randomised words which don't
-                                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                                    need to be sure there isn't anything embarrassing hidden.</p>
+                                <h5>Descripción</h5>
+                                <p>{serviceDetails?.description}</p>
+                                <p>{serviceDetails?.desc}</p>
+                                <p>{serviceDetails?.desc2}</p>
 
                                 <div className="row">
                                     <div className="col-md-6 col-sm-6 col-12">
@@ -57,26 +53,9 @@ const SeviceSinglePage = (props) => {
                                     </div>
                                 </div>
 
-                                <div className="process-wrap">
-                                    <h5>Our work process</h5>
-                                    <div className="row">
-                                        {Services.slice(0, 3).map((service, Sitem) => (
-                                            <div className="col-lg-4 col-md-6 col-12" key={Sitem}>
-                                                <div className="process-item">
-                                                    <div className="process-icon">
-                                                        <i className={`fi ${service.fIcon1}`}></i>
-                                                    </div>
-                                                    <div className="process-text">
-                                                        <h3>  <Link onClick={ClickHandler} href='/service/[slug]' as={`/service/${service.slug}`}>{service.title}</Link></h3>
-                                                        <p>The lower-numbered purposes are better understood and practiced </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
+                                
                             </div>
-                            <Benefits/>
+                            {/* <Benefits/> */}
                         </div>
                         <ServiceSidebar />
                     </div>

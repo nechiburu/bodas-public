@@ -30,7 +30,7 @@ const ProductSidebar = ({ products }) => {
                         products.slice(0, 3).map((product, pitem) => (
                             <div className="wpo-best-seller-item" key={pitem}>
                                 <div className="wpo-best-seller-img">
-                                    <img src={product.proImg} alt="" />
+                                    <img src={`https://back.traveleroweddings.com/uploads/${product._id}`} alt="" />
                                 </div>
                                 <div className="wpo-best-seller-text">
                                     <h4><Link onClick={ClickHandler} href='/product-single/[slug]' as={`/product-single/${product.slug}`}>{product.title}</Link></h4>

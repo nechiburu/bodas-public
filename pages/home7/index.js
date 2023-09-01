@@ -1,16 +1,20 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/index';
-import Hero7 from '../../components/hero7';
+import PageTitle from '../../components/pagetitle';
+import Footer from '../../components/footer'
+import Scrollbar from '../../components/scrollbar'
+import TeamSection from '../../components/team';
 
-const HomePage5 = (props) => {
+const StoryPage = (props) => {
 
     return (
         <div>
-            <Navbar topbarNone={'topbarNone'} hclass={'wpo-header-style-2'}/>
-            <Hero7 />
+            <Navbar/>
+            <PageTitle pageTitle={'Parejas'} pagesub={'Parejas'}/> 
+            <TeamSection/>
+            <Footer/>
+            <Scrollbar/>
         </div>
     )
 };
-export default HomePage5;
-
-
+export default StoryPage;
