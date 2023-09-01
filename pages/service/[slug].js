@@ -35,10 +35,11 @@ const SeviceSinglePage = (props) => {
                                 </div>
                             </div>
                             <div className="wpo-p-details-section">
-                                <h5>Descripción</h5>
-                                <p>{serviceDetails?.description}</p>
+                                <h5>{serviceDetails?.description}</h5>
                                 <p>{serviceDetails?.desc}</p>
                                 <p>{serviceDetails?.desc2}</p>
+                                <p>{serviceDetails?.desc3}</p>
+                                <p>{serviceDetails?.desc4}</p>
 
                                 <div className="row">
                                     <div className="col-md-6 col-sm-6 col-12">
@@ -49,6 +50,11 @@ const SeviceSinglePage = (props) => {
                                     <div className="col-md-6 col-sm-6 col-12">
                                         <div className="wpo-p-details-img">
                                             <Image src={serviceDetails?.sinnerImg2} alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6 col-sm-6 col-12">
+                                        <div className="wpo-p-details-img">
+                                            <Image src={serviceDetails?.sinnerImg3} alt="" />
                                         </div>
                                     </div>
                                 </div>
