@@ -57,56 +57,18 @@ const MatrimonioPage = (props) => {
                             <div className="col-lg-6 col-12">
                                 <div className="portfolio-single-text">
                                     <h2>{projectDetails.title}</h2>
-                                    <span>{projectDetails.location}</span>
-                                    <p>{projectDetails.desc}</p>
+                                    {/* <span>{projectDetails.location}</span> */}
+                                    {/* <p>{projectDetails.desc}</p> */}
                                     <div className="wpo-portfolio-single-content-des">
                                         <ul>
-                                            {/* <li>Client :<span>Robert William</span></li>
-                                            <li>Location :<span>7 Lake Street,London</span></li> */}
-                                            {/* <li>Date :<span>{projectDetails.date}</span></li> */}
-                                            {/* <li>Duration : <span>3 Month</span></li>
-                                            <li>Tag :<span>Wedding, Planning</span></li> */}
+                                            <li>Ubicación :<span>{projectDetails.location}</span></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="wpo-portfolio-section-s3 section-padding">
-                        <h2 className="hidden">some</h2>
-                        <div className="sortable-gallery">
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="portfolio-grids gallery-container clearfix">
-
-                                        <Gallery>
-                                            <div className="grid">
-                                                <div className="img-holder">
-                                                    <Item original={`https://back.traveleroweddings.com/${projectDetails.pimg1}`} thumbnail={`https://back.traveleroweddings.com/${projectDetails.pimg1}`} width="600" height="700">
-                                                        {({ ref, open }) => <img ref={ref} onClick={open} src={`https://back.traveleroweddings.com/${projectDetails.pimg1}`} />}
-                                                    </Item>
-                                                </div>
-                                            </div>
-                                            <div className="grid">
-                                                <div className="img-holder">
-                                                    <Item original={`https://back.traveleroweddings.com/${projectDetails.pimg2}`} thumbnail={`https://back.traveleroweddings.com/${projectDetails.pimg2}`} width="600" height="700">
-                                                        {({ ref, open }) => <img ref={ref} onClick={open} src={`https://back.traveleroweddings.com/${projectDetails.pimg2}`} />}
-                                                    </Item>
-                                                </div>
-                                            </div>
-                                            <div className="grid">
-                                                <div className="img-holder">
-                                                    <Item original={`https://back.traveleroweddings.com/${projectDetails.pimg3}`} thumbnail={`https://back.traveleroweddings.com/${projectDetails.pimg3}`} width="600" height="700">
-                                                        {({ ref, open }) => <img ref={ref} onClick={open} src={`https://back.traveleroweddings.com/${projectDetails.pimg3}`} />}
-                                                    </Item>
-                                                </div>
-                                            </div>
-                                        </Gallery>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
             <Footer />
