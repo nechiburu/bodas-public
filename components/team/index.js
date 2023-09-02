@@ -47,7 +47,7 @@ const TeamSection = (props) => {
                     </h3>
                     <span>{teamMember.title}</span>
                     <ul></ul>
-                    <Link onClick={ClickHandler} className="theme-btn" href="http://localhost:3030/">
+                    <Link onClick={ClickHandler} className="theme-btn" href="https://bodas-commerce1-0.vercel.app/">
                       <i className=""></i> Regalar
                     </Link>
                   </div>
