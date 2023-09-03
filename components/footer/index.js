@@ -68,9 +68,9 @@ const Footer = (props) => {
                                 <div className="contact-ft">
                                     <p>Si tienes alguna consulta, sientete libre de comunicarte con nosotros</p>
                                     <ul>
-                                        <li><i className="fi flaticon-email"></i>weddings@travelerocorp.com</li>
+                                        <li><i className="fi flaticon-email"></i>weddings@viajestravelero.com</li>
                                         <li><i className="fi flaticon-phone-call"></i><a href="https://wa.me/59169203728" target="_blank" rel="noopener noreferrer" style={{ color: '#5880a2' }}>+591 69203728</a></li>
-                                        <li><i className="fi flaticon-maps-and-flags"></i>Avenida San Martin, SCZ
+                                        <li><i className="fi flaticon-maps-and-flags"></i>Oficinas Viajes Travelero
                                         </li>
                                     </ul>
                                 </div>
