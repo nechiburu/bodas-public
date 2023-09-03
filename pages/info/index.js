@@ -10,7 +10,7 @@ const StoryPage = (props) => {
     return (
         <div>
             <Navbar/>
-            <PageTitle pageTitle={'¿Como funciona?'} pagesub={'¿Como funciona?'}/> 
+            <PageTitle pageTitle={'¿Cómo funciona?'} pagesub={'¿Cómo funciona?'}/> 
             <Info/>
             <Footer/>
             <Scrollbar/>
