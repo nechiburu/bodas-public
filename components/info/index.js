@@ -11,7 +11,7 @@ const Info = (props) => {
     return (
         <section className={`wpo-service-section-s2 section-padding ${props.sSClass}`}>
             <div className="container">
-                <SectionTitle topTitle={'Fondo Mielero'} MainTitle={'¿Como funciona?'} />
+                <SectionTitle topTitle={'Fondo Mielero'} MainTitle={'¿Cómo funciona?'} />
                 <div className="wpo-service-wrap">
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-12">
@@ -21,8 +21,10 @@ const Info = (props) => {
                                         <img src='/images/service/internet.png' alt="Icono" />
                                     </div>
                                     <h3>Planificación</h3>
+                                    <p style={{ color: 'white' }}>.</p>
                                     <p>Los invitados pueden confirmar su asistencia directamente a través del
-                                        sitio web de su boda. Sin envío. Sin complicaciones.</p>
+                                        sitio web de su boda. Sin envío. Sin complicaciones.</p>                                    
+                                    <p style={{ color: 'white' }}>.</p>
                                 </div>
 
                             </div>
@@ -34,8 +36,11 @@ const Info = (props) => {
                                         <img src='/images/service/calendar.png' alt="Icono" />
                                     </div>
                                     <h3>Itinerario de Bodas</h3>
+                                    <br></br><br></br>
+                                    
                                     <p>Publique su itinerario para ayudar a los invitados a
                                         planificar las actividades de su boda.</p>
+                                    <br></br><br></br>
                                 </div>
 
                             </div>
