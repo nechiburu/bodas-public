@@ -62,7 +62,7 @@ const MatrimonioPage = (props) => {
                                     {/* <p>{projectDetails.desc}</p> */}
                                     <div className="wpo-portfolio-single-content-des">
                                         <ul>
-                                            <li>Ubicación :<span>{projectDetails.location}</span></li>
+                                            <li>Destino :<span>{projectDetails.location}</span></li>
                                             <br></br><br></br><br></br>
                                             <div style={{ textAlign: 'center' }}>
                                                 <Link onClick={ClickHandler} className="theme-btn" href="https://bodas-commerce1-0.vercel.app/">
