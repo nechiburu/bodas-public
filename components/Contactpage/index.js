@@ -20,9 +20,15 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Dirección</h2>
-                                            <p>Oficina Viajes Travelero Santa Cruz</p>
-                                            <p>Oficina Viajes Travelero Cochabamba</p>
-                                            <p>Oficina Viajes Travelero La Paz</p>
+                                            <h6>Santa Cruz:</h6>
+                                            <p>Equipetrol, Ave. San Martín y Dr. Alejandro Ramirez</p>
+                                            <h6>Cochabamba:</h6>
+                                            <p>Torres América Norte Mezzanine, Ave. América 
+                                                y Pando lado IC Norte</p>
+                                            <h6>La Paz:</h6>
+                                            <p>Calacoto, Ave. Ballivián y Calle 12 Edificio Peñaloza 
+                                                sobre Show Room Audi</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -35,12 +41,16 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Correo</h2>
-                                            <br></br><br></br>
-                                            <br></br>
+                                            <br></br><br></br><br></br>
+                                            <p style={{ color: 'white' }}>.</p>
+                                            <p style={{ color: 'white' }}>.</p>                                            
                                             <p>weddings@viajestravelero.com</p>
                                             <p style={{ color: 'white' }}>.</p>
-                                            <br></br>
                                             <p style={{ color: 'white' }}>.</p>
+                                            <p style={{ color: 'white' }}>.</p>
+                                            <br></br><br></br>
+                                            <br></br>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -53,12 +63,15 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>WhatsApp</h2>
-                                            <br></br><br></br>
-                                            <br></br>
+                                            <br></br><br></br><br></br>
+                                            <p style={{ color: 'white' }}>.</p>
+                                            <p style={{ color: 'white' }}>.</p>   
                                             <a href="https://wa.me/59169203728" target="_blank" rel="noopener noreferrer" style={{ color: '#738ea5' }}>+591 69203728</a>
+                                            <p style={{ color: 'white' }}>.</p>
+                                            <p style={{ color: 'white' }}>.</p>
+                                            <p style={{ color: 'white' }}>.</p>
+                                            <p style={{ color: 'white' }}>.</p> 
                                             <br></br><br></br>
-                                            <br></br><br></br>
-                                            <br></br>
                                         </div>
                                     </div>
                                 </div>
