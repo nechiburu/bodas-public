@@ -30,7 +30,7 @@ const TeamSection = (props) => {
   return (
     <section className="wpo-team-section section-padding">
       <div className="container">
-        <SectionTitle topTitle={'Parejas a casarse'} MainTitle={'Envia ragalos a la pareja deseada'} />
+        <SectionTitle topTitle={'Parejas a casarse'} MainTitle={'Envia regalos a la pareja deseada'} />
         <div className="wpo-team-wrap">
           <div className="row">
             {team.slice(0,8).map((teamMember, tm) => (
