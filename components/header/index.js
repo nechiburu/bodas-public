@@ -41,7 +41,7 @@ class Header extends Component {
 
     return (
       <header id="header" className={this.props.topbarNone}>
-        <HeaderTopbar />
+        {/* <HeaderTopbar /> */}
         <div className={`wpo-site-header ${this.props.hclass}`}>
           <nav className="navigation navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
@@ -84,7 +84,7 @@ class Header extends Component {
                       <li className="menu-item-has-children">
                         <Link href="#">Luna de Miel</Link>
                         <ul className="sub-menu">
-                          <li><Link href="/service-s2">Destinos</Link></li>
+                          <li><Link href="/destino">Destinos</Link></li>
                           <li><Link href="#">Fondo Mielero</Link>
                             <ul className="sub-menu">
                               <li><Link href="/info">¿Como funciona?</Link></li>
