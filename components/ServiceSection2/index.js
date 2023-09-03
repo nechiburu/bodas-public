@@ -33,6 +33,7 @@ const ServiceSection2 = (props) => {
                                         <img src='/images/service/gift.png' alt="Icono" />
                                     </div>
                                     <h3>Regalos</h3>
+                                    <p style={{ color: 'white' }}>.</p>
                                     <p>Elige los regalos que deseas.</p>
                                 </div>
 
@@ -45,6 +46,7 @@ const ServiceSection2 = (props) => {
                                         <img src='/images/service/ancient-scroll.png' alt="Icono" />
                                     </div>
                                     <h3>Dedicatoria</h3>
+                                    <p style={{ color: 'white' }}>.</p>
                                     <p>Escribe tu dedicatoria.</p>
                                 </div>
 
