@@ -145,9 +145,9 @@ class RSVP extends Component {
                                             <option disabled value="">
                                                 Seleccionar destino
                                             </option>
-                                            <option>cancun</option>
-                                            <option>punta cana</option>
-                                            <option>jamaica</option>
+                                            <option>Cancun</option>
+                                            <option>Punta Cana</option>
+                                            <option>Jamaica</option>
                                             <option>Riviera Maya</option>
                                             <option>Tulum</option>
                                             <option>Otro</option>
@@ -160,9 +160,9 @@ class RSVP extends Component {
 
                                             <option disabled value="">
                                                 Seleccionar tipo  de boda
-                                            </option><option>simbolica</option>
-                                            <option>religiosa</option>
-                                            <option>legal</option>
+                                            </option><option>Simbolica</option>
+                                            <option>Religiosa</option>
+                                            <option>Legal</option>
                                         </select>
                                         <p>{error.boda ? error.boda : ''}</p>
                                     </div>
