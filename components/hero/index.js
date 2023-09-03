@@ -24,11 +24,11 @@ const Hero = () => {
                 <div className="swiper-wrapper">
                     <Slider {...settings}>
                         <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/prueba.jpg'})` }}>
+                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/slide.jpeg'})` }}>
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">
-                                            <h2>Amor soñado</h2>
+                                            <h2>TU DIA INOLVIDABLE</h2>
                                         </div>
                                         <div className="slide-text">
                                             <p>¡Bienvenidos! Únete a nosotros para celebrar el amor
@@ -43,11 +43,11 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/pareja.jpg'})` }}>
+                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/slide2.jpg'})` }}>
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">
-                                            <h2>Amor soñado</h2>
+                                            <h2>TU DIA INOLVIDABLE</h2>
                                         </div>
                                         <div className="slide-text">
                                             <p>¡Bienvenidos! Únete a nosotros para celebrar el amor
@@ -60,26 +60,7 @@ const Hero = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/pareja3.jpg'})` }}>
-                                <div className="container-fluid">
-                                    <div className="slide-content">
-                                        <div className="slide-title">
-                                            <h2>Amor soñado</h2>
-                                        </div>
-                                        <div className="slide-text">
-                                            <p>¡Bienvenidos! Únete a nosotros para celebrar el amor
-                                                verdadero.</p>
-                                        </div>
-                                        <div className="clearfix"></div>
-                                        <div className="slide-btns">
-                                            <Link href="/about" className="theme-btn">Conocer Más</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> 
                     </Slider>
                 </div>
             </div>
