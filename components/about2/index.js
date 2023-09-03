@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import abimg from '../../public/images/about/a1.jpg'
+import abimg from '../../public/images/about/1.jpeg'
 import abimg3 from '../../public/images/about/shape.png'
 import abimg4 from '../../public/images/about/thumb.png'
 
