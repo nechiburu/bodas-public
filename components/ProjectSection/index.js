@@ -23,7 +23,8 @@ const ProjectSection = (props) => {
                                             <img src={project.pimg1} alt="" />
                                             <div className="hover-content">
                                             <h4>{project.title}</h4>
-                                                <span>{project.location}- {project.date}</span>
+                                                <span>{project.location}</span> <br></br>
+                                                <span>{project.date}</span>
                                             </div>
                                         </div>
                                     </div>
