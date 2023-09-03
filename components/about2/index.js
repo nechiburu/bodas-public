@@ -31,22 +31,58 @@ const About2 = (props) => {
                                 </div>
                             </div>
                             <div className="wpo-about-icon-content">
-                                <h2>Tu Compañero Ideal para Bodas de Ensueño</h2>
-                                <p>En un día tan especial como es la boda, cada detalle importa.
-                                    En TraveleroWeddings, entendemos que cada pareja es única y por ello,
-                                    cada boda debería serlo también. Nos dedicamos a transformar tus
-                                    visiones en realidad, llevando a cabo bodas en destinos soñados que
-                                    reflejen auténticamente la esencia de cada pareja.</p>
-                                <p>
-                                    Con años de experiencia en el mundo nupcial, contamos con una amplia
-                                    gama de destinos y servicios que se adaptan a todas las necesidades y deseos.
-                                    Ya sea que busques un lugar íntimo, exótico o tradicional, nos encargamos
-                                    de todo para que tú solo tengas que disfrutar de tu día.</p>
-                                <ul>
-                                    <li>Destinos personalizados que se adaptan a tu estilo y visión.</li>
-                                    <li>Testimonios y experiencias de parejas que ya han vivido su gran día con nosotros.</li>
-                                    <li>Facilidad de regalos para invitados, asegurando que cada detalle sea memorable.</li>
-                                </ul>
+                                <h2>Tu Compañero Ideal para Bodas de Ensueño: Travelero Weddings</h2>
+                                <p>En el maravilloso mundo de las bodas, sabemos que cada momento es
+                                    especial y único. En Travelero Weddings, entendemos la singularidad
+                                    de cada pareja y creemos que su boda debe reflejar a la perfección
+                                    su historia de amor. Nuestra misión es convertir tus sueños en
+                                    realidad, transportándote a destinos de ensueño donde el amor
+                                    florece y cada detalle se convierte en un recuerdo inolvidable.</p>
+                                <p>Con una sólida trayectoria en la industria nupcial,
+                                    hemos acumulado años de experiencia y conocimiento.
+                                    Nuestra oferta incluye una amplia selección de destinos y
+                                    servicios diseñados para satisfacer todas tus necesidades y deseos.
+                                    Ya sea que sueñes con una boda íntima en la playa, una ceremonia
+                                    exótica o una celebración tradicional en una encantadora capilla,
+                                    estamos preparados para hacerlo realidad.</p>
+                                <h3>Lo que nos hace destacar:</h3>
+                                <p>Destinos Personalizados: Trabajamos estrechamente contigo para
+                                    crear un entorno que se adapte perfectamente a tu estilo y visión.
+                                    Cada detalle, desde la decoración hasta la elección del lugar, se
+                                    elige cuidadosamente para que tu boda sea un reflejo auténtico de
+                                    tu amor.</p>
+                                <p>Experiencias Compartidas: Nada es más convincente que escuchar de
+                                    aquellos que han vivido la experiencia. Testimonios y relatos de
+                                    parejas que ya han confiado en nosotros para su gran día.
+                                    Sus historias de éxito son pruebas de nuestro compromiso con
+                                    la excelencia.</p>
+                                <p>Regalos Memorables: Sabemos que los pequeños detalles marcan la
+                                    diferencia. Ofrecemos una variedad de opciones para regalos de
+                                    invitados que aseguran que cada uno de ellos se lleve un recuerdo
+                                    memorable de tu boda. Desde elegantes obsequios personalizados
+                                    hasta elementos temáticos que enriquecerán la experiencia de tus
+                                    invitados.</p>
+                                <p>Además, en Travelero Weddings creemos que las bodas deben ser 
+                                    experiencias inolvidables desde el primer momento en que comienzan 
+                                    los preparativos. Por eso, ofrecemos un servicio de asesoramiento 
+                                    personalizado desde el primer encuentro. Nuestro equipo de expertos 
+                                    en bodas estará a tu disposición para escuchar tus ideas, entender 
+                                    tus deseos y convertirlos en un plan de boda a medida.</p>
+                                <p>Estamos aquí para hacer que tus sueños se hagan realidad. 
+                                    Trabajamos en estrecha colaboración contigo para seleccionar 
+                                    el destino perfecto, los detalles más elegantes y cada elemento 
+                                    que hará que tu boda sea única.</p>
+                                <p>En Travelero Weddings, no solo planificamos bodas, creamos recuerdos 
+                                    inolvidables. Nuestra dedicación a la excelencia y 
+                                    nuestra pasión por lo que hacemos se reflejan en cada 
+                                    celebración que organizamos. Cada pareja que elige confiar 
+                                    en nosotros encuentra una experiencia sin igual, llena de alegría, 
+                                    emoción y amor.</p>
+                                <p>Permítenos ser tu compañero ideal en este viaje hacia tu boda de 
+                                    ensueño. Juntos, haremos que tu día especial sea un verdadero 
+                                    reflejo de tu amor y compromiso, un evento que recordarás con 
+                                    cariño durante toda tu vida. ¿Estás listo para comenzar este 
+                                    emocionante viaje con nosotros?</p>
                             </div>
                         </div>
                     </div>
