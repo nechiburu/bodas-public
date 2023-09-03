@@ -52,6 +52,11 @@ const menus = [
         })),
     },
     {
+        id: 5,
+        title: 'Desinos Luna de Miel',
+        link: '/destino',
+    },
+    {
         id: 7,
         title: 'Fondo Mielero',
         link: '#',
